@@ -4,8 +4,8 @@ const DenominationItem = props => {
   const {use, onButton} = props
   const {value} = use
 
-  const onType = valu => {
-    onButton(valu)
+  const onType =()=> {
+    onButton(value)
   }
   return (
     <li className="l">
