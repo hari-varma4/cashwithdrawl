@@ -14,7 +14,7 @@ class CashWithdrawal extends Component {
 
   render() {
     const {balance} = this.state
-    const listt = this.props
+    const denominationsList = this.props
     return (
       <div className="con">
         <div className="cc">
@@ -28,7 +28,7 @@ class CashWithdrawal extends Component {
         <h1 className="hhh">Withdraw</h1>
         <span className="s">CHOOSE SUM(IN RUPEES)</span>
         <ul className="u">
-          {listt.map(each => (
+          {denominationsList.map(each => (
             <DenominationItem
               key={each.id}
               use={each}
